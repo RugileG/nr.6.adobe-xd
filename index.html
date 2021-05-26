@@ -15,25 +15,53 @@
         * {
             box-sizing: border-box;
         }
-        /* @media screen and (max-width: 720px) {
-        .container > div {
-        width: 100%;
-        flex-flow: column wrap;
-        margin: 0auto;
+        @media screen and (max-width: 780px) {
+            .main div {
+                flex-direction: column;
+                margin: 0 auto;
             }
-        
-        } */
+            .trys-divai {
+                
+                display: block;
+                
+            }
+            
 
+        
+        }
+        /* hamburger */
+        /* .container {
+        display: inline-block;
+        cursor: pointer;
+        }
+
+        .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+        }
+
+        .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+        }
+
+        .change .bar2 {opacity: 0;}
+
+        .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+        } */
+        /* hamburger */
         body {
             max-width: 1920px;
             margin: 0 auto;
         }
-        .container {
-            display: flex;
-            width: 100%;
-        }
-        .top {
-            display: block;
+        
+        .main {
+            
             background-color: #0000004F;
             width: 100%;
             height: 1000px;
@@ -67,8 +95,7 @@
         .list a {
             text-decoration: none;
             font-weight: bold;
-            
-        
+
         }
         .list > .item {
             display: block;
@@ -156,8 +183,6 @@
             
         }
         .melynas, .zydras, .baltas {
-            /* display: block; */
-            /* width: fit-content; */
             padding-right: 50px;
             padding-left: 50px;
             padding-bottom: 50px;
@@ -267,7 +292,7 @@
             width: 60%;
             font-size: 1.1875rem;
             padding-top: 40px;
-            padding-left: 150px;
+            padding-left: 110px;
             color: #6C6C6C;
         }
         .see-our-services-btn {
@@ -329,8 +354,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
-            <div class="top">
+        <div class="main">
                     <nav id="navigation" class="list">
                         <a href='#' class='item -link'>Services</a>
                         <a href='#' class='item -link'>About Us</a>
@@ -342,8 +366,14 @@
                         <button class="btn1">RU</button>
                         <button class="btn2">EN</button>
                         <span class="search"><i class='fas fa-search'></i></span>
+
                         </div>
 
+                        <!-- <div class="container" onclick="myFunction(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                          </div> -->
                     </nav>
                     <div>
                         <div class="title-text">
@@ -354,8 +384,8 @@
                         <div>
 
                         </div>
-                            </div>
-                <div class="trys-divai">
+                    </div>
+                 <div class="trys-divai">
                         <div class="melynas">
                         <span>
                             <i class='fas fa-phone-alt'></i>
@@ -364,8 +394,8 @@
                         <h3>Emergency Call</h3>
                         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blonditiis.</p>
                         <a href="#">CALL US NOW</a>
-                    </div>
-                    <div class="zydras">
+                     </div>
+                     <div class="zydras">
                         <span>
                             <i class='fas fa-map-marker-alt'></i>
                         </span>
@@ -373,13 +403,13 @@
                         <h3>Where Are We?</h3>
                         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blonditiis.</p>
                         <a href="#">SEE ON MAP</a>
-                    </div>
-                    <div class="baltas">
-                        <span>
+                     </div>
+                     <div class="baltas">
+                            <span>
                             <i class='far fa-calendar-alt'></i>
-                        </span>
-                        <hr>
-                        <h3>Opening Hours</h3>
+                            </span>
+                         <hr>
+                            <h3>Opening Hours</h3>
                             <div class="days">
                                 <p>Mon-Fri:</p>
                                 <p>Saturday:</p>
@@ -394,13 +424,14 @@
 
                             </div>
 
-                    </div>
+                        </div>
                 </div>
+
                 <div class="middle"> 
                     <div class="middle-h2">
                         <h2>Choose Our Clinic, Chose The Best Care For Yourself And Your Family</h2>
                         <div class="signature">
-                            <img src="https://lh3.googleusercontent.com/proxy/nSvSXFPJbvZ-l3KbqcXTfjjjRjuLadD8h15d7mF2GyrfU5uhNE7lGJHdcJrTRfh2GXSqKqWu5vO90wCcHU0XF2v4C6LzBA9c8L8" alt="signature">
+                            <img src="https://signaturely.com/wp-content/uploads/2020/04/unreadable-letters-signaturely.svg" alt="signature">
                             <div class="signature2">
                             <h4>Tom Henders</h4>
                             <p>Head Dentist</p>
@@ -414,6 +445,7 @@
                     </div>
                     
                 </div>
+
                     <div class="bottom">
                         <div class="bottom-div">
                             <h2>Our Values</h2>
@@ -428,9 +460,13 @@
                         </div>
                     </div>
             
-            </div>
+        </div>
 
-            
-    </div>
+        <!-- <script>
+            function myFunction(x) {
+              x.classList.toggle("change");
+            }
+            </script> -->
+
 </body>
 </html>
